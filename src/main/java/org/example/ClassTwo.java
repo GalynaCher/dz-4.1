@@ -1,12 +1,13 @@
 package org.example;
 
-public class ClassTwo
+public class ClassTwo       // 3. Створити у ньому 2 класи, один із яких містить метод main.
+                            // 4. У другому класі оголосити:
 {
-    int intExample = 127;
+    public int intExample = 127;   // а. поле типу int із заданим значенням;
 
-    String returnInt() {
-        System.out.println("Print from class \"ClassTwo\": " + intExample);
-        return "Class \"ClassTwo\" returns: " + intExample;
+    public Integer returnInt() {
+        System.out.println("---<" + intExample + ">---"); // b. метод, який друкує в консоль "---<значення поля>---"
+        return intExample;                 // і повертає його.
     }
 }
 
